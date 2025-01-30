@@ -1,0 +1,64 @@
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.actions, 
+.top-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+table th:not(.actions-th){
+  position: relative; 
+  padding: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+table th:not(.actions-th):hover::after {
+  content: "sort";
+  position: absolute;
+  left: 50%;
+  bottom: -10px; 
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #888;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit, .delete {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333; 
+}
+
+.edit {
+  background-color: #e0e0e0;
+}
+
+.delete {
+  background-color: #f0d9d9; 
+}
+
+.edit:hover {
+  background-color: #c0c0c0; 
+}
+
+.delete:hover {
+  background-color: #d4b9b9; 
+}
+
+.table tbody tr:hover {
+  background-color: #f5f5f5; 
+}
